@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>전오연의 웹 연습장</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>전오연의 웹 연습장</h1>
+      <nav aria-label="주 메뉴">
+        <a href="index.html" aria-current="page">홈</a>
+        <a href="about.html">내 정보</a>
+        <a href="guestbook.html">방명록</a>
+      </nav>
+    </header>
+    <main>
+      <section class="welcome">
+        <p class="card" id="greeting">안녕하세요, 전오연님! 좋은 하루 되세요.</p>
+        <button id="hello-button" type="button">인사말 바꾸기</button>
+        <button id="dark-button" type="button">다크 모드</button>
+        <p class="card" id="count">클릭 0회</p>
+      </section>
+      <section>
+        <h2>소개</h2>
+        <img class="profile-image" src="images/images.jpg" alt="프로필 사진">
+        <p class="card">웹프로그래밍을 배우는 <strong>전오연</strong>입니다.</p>
+        <p class="card">이 페이지는 수업 시간에 한 주씩 늘려 갑니다.</p>
+      </section>
+      <section>
+        <h2>취미</h2>
+        <ul class="card">
+          <li>내셔널 지오그래픽 보기</li>
+          <li>맛있는거 먹기</li>
+          <li>웹 서핑</li>
+        </ul>
+      </section>
+    </main>
+    <footer><p>웹프로그래밍 실습</p></footer>
+  </body>
+</html>

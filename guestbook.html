@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>방명록 | 전오연의 웹 연습장</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="guestbook.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>방명록</h1>
+      <nav aria-label="주 메뉴">
+        <a href="index.html">홈</a>
+        <a href="about.html">내 정보</a>
+        <a href="guestbook.html" aria-current="page">방명록</a>
+      </nav>
+    </header>
+    <main>
+      <h2>한 줄 남기기</h2>
+      <h3>쓰는 순서</h3>
+      <ol>
+        <li>이름을 적는다.</li>
+        <li>메시지를 적는다.</li>
+        <li>남기기 버튼을 누른다.</li>
+      </ol>
+      <form id="guestbook-form" novalidate>
+        <p><label for="name">이름</label><input id="name" name="name" type="text" maxlength="30"></p>
+        <p><label for="email">이메일</label><input id="email" name="email" type="email" autocomplete="email"></p>
+        <p><label for="message">메시지</label><textarea id="message" name="message" rows="4" maxlength="240"></textarea></p>
+        <button type="submit">남기기</button>
+      </form>
+      <p id="notice" role="status" aria-live="polite"></p>
+      <h2>남긴 글</h2>
+      <ul class="card" id="entry-list">
+        <li>김채운: 첫 방명록입니다.</li>
+        <li>배정서: 두 번째 글입니다.</li>
+      </ul>
+    </main>
+    <footer><p>웹프로그래밍 실습</p></footer>
+  </body>
+</html>
